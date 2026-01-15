@@ -15,11 +15,12 @@ python matrix2col.py input_file.meg
 ```
 ## Output
 The script generates a CSV file named pairwise_distances.csv in the directory where the input MEG file is located.
-```
-sample1 sample2 distance
-sampleA sampleB     38.0
-sampleA sampleC     52.0
-sampleB sampleC     16.0
-```
+
+|sample1|sample2|distance|
+|-------|-------|--------|
+|sampleA|sampleB|38.0|
+|sampleA|sampleC|52.0|
+|sampleB|sampleC|16.0|
+
 
 
