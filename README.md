@@ -1,4 +1,4 @@
-# MEGA Matrix to Column
+# meg2tidy
 A Python utility to parse [MEGA](https://www.megasoftware.net/) (.meg) pairwise distance matrices into a long-format (tidy) CSV file. This tool converts wide-format matrices into a column-based structure suitable for data visualization and analysis in tools like [Cytoscape](https://cytoscape.org/).
 ## Features
 - Parses standard MEGA distance matrix files (.meg). 1.2.5
