@@ -7,7 +7,7 @@ A Python utility to parse a [MEGA](https://www.megasoftware.net/) pairwise dista
 ## Installation
 Ensure you have Python 3.x and pandas installed.
 ```bash
-git clone https://github.com/caladov/mega-matrix-to-column.git
+git clone https://github.com/caladov/meg2tidy.git
 ```
 ## Usage
 ```bash
