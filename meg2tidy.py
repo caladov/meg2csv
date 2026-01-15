@@ -43,7 +43,7 @@ def convert_meg_to_tidy(input_matrix):
             long_df = df.stack(future_stack=True).reset_index()
             long_df.columns = ['sample1', 'sample2', 'distance']
             long_df.dropna(subset=['distance'], inplace=True)
-            long_df['snp_distance'] = long_df['distance']
+            long_df['distance'] = long_df['distance']
             dirname = os.path.dirname(os.path.abspath(input_matrix))
             output_csv = os.path.join(dirname, 'pairwise_distances.csv')
             long_df.to_csv(output_csv, index=False)
@@ -55,9 +55,9 @@ def convert_meg_to_tidy(input_matrix):
 
 def main():
     parser = argparse.ArgumentParser(description='Parse a MEGA pairwise distance matrix MEG file into a tidy CSV file called "pairwise_distances.csv" located in the same directory as the input MEG file')
-    parser.add_argument('input', type=str, required=True, help='Path to the input MEG file created by MEGA')
+    parser.add_argument('input', type=str, help='Path to the input MEG file created by MEGA')
     args = parser.parse_args()
-    convert_meg_to_tidy(args.input, args.output)
+    convert_meg_to_tidy(args.input)
     
 
 if __name__ == '__main__':
