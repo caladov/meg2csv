@@ -1,4 +1,4 @@
-# meg2tidy
+# meg2csv
 A Python utility to parse a [MEGA](https://www.megasoftware.net/) pairwise distance matrix MEG file into a long-format (tidy) CSV file. This tool converts wide-format matrices into a column-based structure suitable for data visualization and analysis in tools like [Cytoscape](https://cytoscape.org/).
 ## Features
 - Parses standard MEGA distance matrix files (.meg). 1.2.5
@@ -7,11 +7,11 @@ A Python utility to parse a [MEGA](https://www.megasoftware.net/) pairwise dista
 ## Installation
 Ensure you have Python 3.x and pandas installed.
 ```bash
-git clone https://github.com/caladov/meg2tidy.git
+git clone https://github.com/caladov/meg2csv.git
 ```
 ## Usage
 ```bash
-python matrix2col.py input_file.meg
+python meg2csv.py input_file.meg
 ```
 ## Output
 The script generates a CSV file named pairwise_distances.csv in the directory where the input MEG file is located.

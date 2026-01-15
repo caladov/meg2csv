@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import argparse
 
-def convert_meg_to_tidy(input_matrix):
+def convert_meg_to_csv(input_matrix):
     """
     Converts a MEGA pairwise matrix MEG file into a long-format (tidy) CSV file.
     Output CSV file will be saved on the same directory as the input MEG file.
@@ -57,7 +57,7 @@ def main():
     parser = argparse.ArgumentParser(description='Parse a MEGA pairwise distance matrix MEG file into a tidy CSV file called "pairwise_distances.csv" located in the same directory as the input MEG file')
     parser.add_argument('input', type=str, help='Path to the input MEG file created by MEGA')
     args = parser.parse_args()
-    convert_meg_to_tidy(args.input)
+    convert_meg_to_csv(args.input)
     
 
 if __name__ == '__main__':
