@@ -11,7 +11,7 @@ git clone https://github.com/caladov/meg2csv.git
 ```
 ## Usage
 ```bash
-python meg2csv.py input_file.meg
+python path/to/meg2csv/meg2csv.py path/to/input_file.meg
 ```
 ## Output
 The script generates a CSV file named pairwise_distances.csv in the directory where the input MEG file is located.
